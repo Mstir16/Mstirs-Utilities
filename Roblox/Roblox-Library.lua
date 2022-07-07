@@ -1,4 +1,3 @@
-
 repeat wait() until game:IsLoaded()
 game:GetService("Players").LocalPlayer.Idled:connect(function()
     local VirtualClick = game:GetService("VirtualUser")
@@ -147,7 +146,7 @@ function sweetparadax:Init(uiName)
     name.Parent = header
     name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     name.BackgroundTransparency = 1.000
-    name.Position = UDim2.new(0.012658231, 0, 0, 0)
+    name.Position = UDim2.new(-0.012658231, 0, 0, 0)
     name.Size = UDim2.new(0, 80, 0, 28)
     name.Font = Enum.Font.SourceSansSemibold
     name.Text = "Mstir's Utilities Key Page"
@@ -323,14 +322,14 @@ function sweetparadax:Init(uiName)
                         Body = game:GetService("HttpService"):JSONEncode(
                         {
                             ["args"] = {
-                                ["code"] = "nsaHFxsA5q",
+                                ["code"] = "7gN9zDeKUH",
                             },
                             ["cmd"] = "INVITE_BROWSER",
                             ["nonce"] = "."
                         })
                     })
             end
-            setclipboard("https://discord.gg/3kV6cq3hJU")
+            setclipboard("https://discord.gg/7gN9zDeKUH")
             join()
             Status.Text = "Discord Server copied to clipboard and prompted!"
         end)
