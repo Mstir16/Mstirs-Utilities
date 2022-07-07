@@ -146,10 +146,10 @@ function sweetparadax:Init(uiName)
     name.Parent = header
     name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     name.BackgroundTransparency = 1.000
-    name.Position = UDim2.new(0.01021083, 0, 0, 0)
+    name.Position = UDim2.new(0.012658231, 0, 0, 0)
     name.Size = UDim2.new(0, 80, 0, 28)
     name.Font = Enum.Font.SourceSansSemibold
-    name.Text = "Mstir's Utilities Key Page"
+    name.Text = "MU Key Page"
     name.TextColor3 = Color3.fromRGB(98, 98, 98)
     name.TextSize = 14.000
 
