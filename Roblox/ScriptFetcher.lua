@@ -3,6 +3,7 @@ local y,n = pcall(function()
 end)
 
 if not y then
+   print(n)
    game.StarterGui:SetCore("SendNotification", {
         Title = "Mstir's Utilities";
         Text = "No Script for this game! Check whats supported in discord";
