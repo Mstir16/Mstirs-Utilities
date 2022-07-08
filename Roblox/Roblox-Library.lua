@@ -267,13 +267,11 @@ function sweetparadax:Init(uiName)
             local script = Instance.new('LocalScript', LoginButton)
 
             
-            local UUIDbox = uuidInput
             local Keybox = keyInput
             local StatusTxt = Status
-            local DiscoName = user
 
             LoginButton.MouseButton1Click:Connect(function()
-                pcall(callback,StatusTxt,Keybox,UUIDbox,DiscoName,MainFrame,Login)
+                pcall(callback,StatusTxt,Keybox,MainFrame,Login)
             end)
         end
         coroutine.wrap(LSLNN_fake_script)()
