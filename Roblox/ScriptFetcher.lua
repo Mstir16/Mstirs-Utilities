@@ -5,7 +5,7 @@ end)
 if not y then
    game.StarterGui:SetCore("SendNotification", {
         Title = "Mstir's Utilities";
-        Text = "No Script for this game!";
+        Text = "No Script for this game! Check whats supported in discord";
         Duration = 10;
     });
 end
