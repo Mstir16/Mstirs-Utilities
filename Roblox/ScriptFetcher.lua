@@ -1,5 +1,5 @@
 local y,n = pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/"..game.PlaceId..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/"..tostring(game.PlaceId)..".lua"))()
 end)
 
 if not y then
