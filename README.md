@@ -7,3 +7,4 @@ Script:
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/ScriptFetcher.lua"))
 
 Link: In-Progress
+
