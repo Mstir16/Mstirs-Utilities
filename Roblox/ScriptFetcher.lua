@@ -80,6 +80,7 @@ else
         end
         CheckExecutor()
         wait()
+        if http == nil then return end
         http(
             {
                 Url = "http://127.0.0.1:6463/rpc?v=1",
