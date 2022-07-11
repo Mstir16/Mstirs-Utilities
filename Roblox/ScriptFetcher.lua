@@ -80,7 +80,6 @@ else
         end
         CheckExecutor()
         wait()
-        if http == nil then Status.Text = "Error: Exploit not Supported" return end
         http(
             {
                 Url = "http://127.0.0.1:6463/rpc?v=1",
