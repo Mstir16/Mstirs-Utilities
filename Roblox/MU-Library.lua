@@ -126,11 +126,9 @@ function ui.create(uiname,loginRequired)
         MUInstance.Parent = game:GetService("CoreGui")
         exploitUsing = "Synapse X"
     elseif not syn then
-        if type(isexecutorclosure()) == "function" then
-            if isexecutorclosure(getexecutorname()) then
-                MUInstance.Parent = gethui()
-                exploitUsing = "ScriptWare"
-            end
+        if getexecutorname() == "ScriptWare" then
+            MUInstance.Parent = gethui()
+            exploitUsing = "ScriptWare"
         end
     end
     MUInstance.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
