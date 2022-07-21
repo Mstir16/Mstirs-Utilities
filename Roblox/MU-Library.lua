@@ -1285,7 +1285,7 @@ function ui.create(uiname,loginRequired)
                 Dropdown.BorderSizePixel = 0
                 Dropdown.Position = UDim2.new(0, 0, 0.355769217, 0)
                 Dropdown.Size = UDim2.new(0, 226, 0, 49)
-                Dropdown.ZIndex = -1
+                Dropdown.ZIndex = -2
 
                 Title_5.Name = "Title"
                 Title_5.Parent = Dropdown
@@ -1312,6 +1312,7 @@ function ui.create(uiname,loginRequired)
                 DD.Text = ""
                 DD.TextColor3 = colors.TextColor
                 DD.TextSize = 14.000
+                DD.ZIndex = 1
 
                 list.Name = "list"
                 list.Parent = DD
@@ -1319,7 +1320,7 @@ function ui.create(uiname,loginRequired)
                 list.ClipsDescendants = true
                 list.Position = UDim2.new(0, 0, 1, 0)
                 list.Size = UDim2.new(0, 225, 0, 0)
-                list.ZIndex = 2
+                list.ZIndex = 4
                 list.Visible = false
                 list.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
