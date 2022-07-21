@@ -1367,6 +1367,9 @@ function ui.create(uiname,loginRequired)
                         ddDebounce = true
                         opened = false
                         TweenGui("size",list,UDim2.new(0, 225, 0, 0),TweenTime)
+                        TweenGui("size",Dropdown,UDim2.new(0, 226,0, 55),TweenTime)
+                        TweenGui("position",DD,UDim2.new(0.0132743362, 0, 0.348697662, 0),TweenTime)
+                        TweenGui("position",list,UDim2.new(0.0132743362, 0, 0.878348589, 0),TweenTime)
                         wait(TweenTime)
                         list.Visible = false
                         ddDebounce = false
