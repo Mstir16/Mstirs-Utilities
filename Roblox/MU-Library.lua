@@ -84,7 +84,7 @@ function ui.create(uiname,loginRequired)
         end)
     end
 
-    local randomName = math.randomseed(10)
+    local randomName = tostring(tick() + math.random(1,10000) + math.random(1,10000) + math.random(1,10000))
     local uiOpen = true
 
     local MUInstance = Instance.new("ScreenGui")
@@ -619,7 +619,7 @@ function ui.create(uiname,loginRequired)
         Frame.Size = UDim2.new(0, 198, 0.00100000005, 0)
 
         login_2.MouseButton1Click:Connect(function()
-            pcall(callback,login,tokenInput,top,exploitUsing)
+            pcall(callback,login,tokenInput,top,MUInstance,exploitUsing)
         end)
     end
 
