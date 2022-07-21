@@ -1358,8 +1358,9 @@ function ui.create(uiname,loginRequired)
                         list.Visible = true
                         TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
                         TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
-                        TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
-                        TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
+                        print('DROPDOWN')
+                        -- TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
+                        -- TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
                         wait(TweenTime)
                         ddDebounce = false
                     elseif opened == true and not ddDebounce then
