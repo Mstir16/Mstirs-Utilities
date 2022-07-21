@@ -1351,18 +1351,15 @@ function ui.create(uiname,loginRequired)
                     sound(uiInteract)
 
                     local TweenTime = 0.3
-                    UpdateFrameSize()
 
                     if opened == false and not ddDebounce then
                         opened = true
                         ddDebounce = true
                         list.Visible = true
                         TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
-                        --TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
-                        -- TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
-                        -- TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
-                        -- TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
-                        -- wait(TweenTime)
+                        TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
+                        TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
+                        TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
                         wait(TweenTime)
                         ddDebounce = false
                     elseif opened == true and not ddDebounce then
@@ -1373,6 +1370,7 @@ function ui.create(uiname,loginRequired)
                         list.Visible = false
                         ddDebounce = false
                     end
+                    UpdateFrameSize()
                 end)
 
                 function DropdownFunc:Refresh(newList)
