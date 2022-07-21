@@ -1284,7 +1284,7 @@ function ui.create(uiname,loginRequired)
                 Dropdown.BackgroundTransparency = 1.000
                 Dropdown.BorderSizePixel = 0
                 Dropdown.Position = UDim2.new(0, 0, 0.177884609, 0)
-            `   Dropdown.Size = UDim2.new(0, 226, 0, 55)
+                Dropdown.Size = UDim2.new(0, 226, 0, 55)
                 Dropdown.ZIndex = -1
 
                 Title_5.Name = "Title"
