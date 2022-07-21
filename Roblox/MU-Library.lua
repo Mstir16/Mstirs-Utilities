@@ -1283,9 +1283,9 @@ function ui.create(uiname,loginRequired)
                 Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Dropdown.BackgroundTransparency = 1.000
                 Dropdown.BorderSizePixel = 0
-                Dropdown.Position = UDim2.new(0, 0, 0.355769217, 0)
-                Dropdown.Size = UDim2.new(0, 226, 0, 49)
-                Dropdown.ZIndex = -2
+                Dropdown.Position = UDim2.new(0, 0, 0.177884609, 0)
+            `   Dropdown.Size = UDim2.new(0, 226, 0, 55)
+                Dropdown.ZIndex = -1
 
                 Title_5.Name = "Title"
                 Title_5.Parent = Dropdown
@@ -1305,24 +1305,25 @@ function ui.create(uiname,loginRequired)
                 DD.Parent = Dropdown
                 DD.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
                 DD.BorderSizePixel = 0
-                DD.Position = UDim2.new(0, 0, 0.408163279, 0)
+                DD.Position = UDim2.new(0.0132743362, 0, 0.348697662, 0)
                 DD.Size = UDim2.new(0, 225, 0, 30)
                 DD.Font = Enum.Font.SourceSans
                 DD.TextScaled = true
                 DD.Text = ""
                 DD.TextColor3 = colors.TextColor
                 DD.TextSize = 14.000
-                DD.ZIndex = 1
+                DD.ZIndex = 2
 
                 list.Name = "list"
                 list.Parent = DD
                 list.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
                 list.ClipsDescendants = true
-                list.Position = UDim2.new(0, 0, 1, 0)
+                list.Position = UDim2.new(0.0132743362, 0, 0.878348589, 0)
                 list.Size = UDim2.new(0, 225, 0, 0)
-                list.ZIndex = 4
+                list.ZIndex = 2
                 list.Visible = false
                 list.AutomaticCanvasSize = Enum.AutomaticSize.Y
+                list.BorderSizePixel = 0
 
                 UIListLayout_5.Parent = list
                 UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1357,6 +1358,9 @@ function ui.create(uiname,loginRequired)
                         ddDebounce = true
                         list.Visible = true
                         TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
+                        TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
+                        TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
+                        TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
                         wait(TweenTime)
                         ddDebounce = false
                     elseif opened == true and not ddDebounce then
