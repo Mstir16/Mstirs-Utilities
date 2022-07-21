@@ -1315,7 +1315,7 @@ function ui.create(uiname,loginRequired)
                 DD.ZIndex = 2
 
                 list.Name = "list"
-                list.Parent = DD
+                list.Parent = Dropdown
                 list.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
                 list.ClipsDescendants = true
                 list.Position = UDim2.new(0.0132743362, 0, 0.878348589, 0)
