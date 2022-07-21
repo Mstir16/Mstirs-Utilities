@@ -1,3 +1,4 @@
+print('test')
 repeat wait() until game:IsLoaded()
 game:GetService("Players").LocalPlayer.Idled:connect(function()
     local VirtualClick = game:GetService("VirtualUser")
