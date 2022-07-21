@@ -1318,6 +1318,7 @@ function ui.create(uiname,loginRequired)
                 list.ClipsDescendants = true
                 list.Position = UDim2.new(0, 0, 1, 0)
                 list.Size = UDim2.new(0, 225, 0, 0)
+                list.ZIndex = 2
                 
                 list.Visible = false
                 list.AutomaticCanvasSize = Enum.AutomaticSize.Y
