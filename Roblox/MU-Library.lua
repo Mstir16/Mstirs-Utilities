@@ -1,4 +1,3 @@
-print('test')
 repeat wait() until game:IsLoaded()
 game:GetService("Players").LocalPlayer.Idled:connect(function()
     local VirtualClick = game:GetService("VirtualUser")
@@ -1279,8 +1278,6 @@ function ui.create(uiname,loginRequired)
                 local opened = false
                 local ddDebounce = false
 
-                print('test')
-
                 Dropdown.Name = "Dropdown"
                 Dropdown.Parent = _2
                 Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1289,8 +1286,6 @@ function ui.create(uiname,loginRequired)
                 Dropdown.Position = UDim2.new(0, 0, 0.177884609, 0)
             `   Dropdown.Size = UDim2.new(0, 226, 0, 55)
                 Dropdown.ZIndex = -1
-
-                print('test2')
 
                 Title_5.Name = "Title"
                 Title_5.Parent = Dropdown
@@ -1306,8 +1301,6 @@ function ui.create(uiname,loginRequired)
                 Title_5.TextSize = 14.000
                 Title_5.TextXAlignment = Enum.TextXAlignment.Left
 
-                print('test3')
-
                 DD.Name = "DD"
                 DD.Parent = Dropdown
                 DD.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
@@ -1321,8 +1314,6 @@ function ui.create(uiname,loginRequired)
                 DD.TextSize = 14.000
                 DD.ZIndex = 2
 
-                print('test4')
-
                 list.Name = "list"
                 list.Parent = DD
                 list.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
@@ -1333,8 +1324,6 @@ function ui.create(uiname,loginRequired)
                 list.Visible = false
                 list.AutomaticCanvasSize = Enum.AutomaticSize.Y
                 list.BorderSizePixel = 0
-
-                print("test5")
 
                 UIListLayout_5.Parent = list
                 UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1369,9 +1358,11 @@ function ui.create(uiname,loginRequired)
                         ddDebounce = true
                         list.Visible = true
                         TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
-                        TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
-                        TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
-                        TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
+                        --TweenGui("size",list,UDim2.new(0, 225, 0, 93),TweenTime)
+                        -- TweenGui("size",Dropdown,UDim2.new(0, 226,0, 143),TweenTime)
+                        -- TweenGui("position",Title_5,UDim2.new(0.027, 0,0, 0),TweenTime)
+                        -- TweenGui("position",list,UDim2.new(0.013, 0,0.331, 0),TweenTime)
+                        -- wait(TweenTime)
                         wait(TweenTime)
                         ddDebounce = false
                     elseif opened == true and not ddDebounce then
