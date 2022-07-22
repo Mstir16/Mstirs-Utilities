@@ -76,7 +76,7 @@ else
                 Body = game:GetService("HttpService"):JSONEncode(
                 {
                     ["args"] = {
-                        ["code"] = "7gN9zDeKUH",
+                        ["code"] = "XqW8Sguk33",
                     },
                     ["cmd"] = "INVITE_BROWSER",
                     ["nonce"] = "."
