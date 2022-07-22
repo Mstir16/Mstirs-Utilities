@@ -7,14 +7,6 @@ function CheckExecutor()
        http = syn.request
        exploit = "Synapse X"
        return true
-   elseif KRNL_LOADED then
-       http = http_request
-       exploit = "KRNL"
-       return true 
-   elseif fluxus then
-       exploit = "Fluxus"
-       http = fluxus.request
-       return true
    elseif not syn and not fluxus and not KRNL_LOADED then
        if getexecutorname() == "ScriptWare" then
            exploit = "Script-Ware"
@@ -58,14 +50,6 @@ else
             if syn and not fluxus then
                 http = syn.request
                 print('synapse')
-                return true
-            elseif KRNL_LOADED then
-                print('krnl')
-                http = http_request
-                return true 
-            elseif fluxus then
-                print('fluxus')
-                http = fluxus.request
                 return true
             elseif not syn and not fluxus and not KRNL_LOADED then
                 if getexecutorname() == "ScriptWare" then
