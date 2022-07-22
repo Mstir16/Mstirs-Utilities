@@ -30,7 +30,7 @@ if http == nil then
     return 
 end
 
-local Response = syn.request({
+local Response = http({
     Url = ScriptURL,
     Method = "GET"
 })
