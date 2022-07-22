@@ -1,4 +1,4 @@
-local ScriptURL = "https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/"..tostring(game.PlaceId)..".lua"
+local ScriptURL = "https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/Games/"..tostring(game.PlaceId)..".lua"
 
 local http = nil
         
